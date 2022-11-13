@@ -39,7 +39,7 @@ function checkParams(input, period, interval, pointscount) {
  * @return {Array} An array of objects with date (timestamp) and value (number) properties
  */
 async function callInvesting(pairId, period, interval, pointscount) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({args: ["--no-sandbox"]});
   const page = await browser.newPage();
   // eslint-disable-next-line max-len
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36');

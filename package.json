@@ -1,6 +1,6 @@
 {
-  "name": "investing-com-api",
-  "version": "4.3.0",
+  "name": "@abcb-cafe/investing-com-api",
+  "version": "4.3.0a",
   "description": "Unofficial APIs for Investing.com website.",
   "main": "index.js",
   "scripts": {
